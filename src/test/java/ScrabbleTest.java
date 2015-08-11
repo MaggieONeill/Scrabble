@@ -11,5 +11,10 @@ public class ScrabbleTest{
   }
 
 
-  
+  @Test
+  public void scrabbleScore_returnAScrabbleScoreForAnyWord_correctScore(){
+    App app = new App();
+    Integer score = 33;
+    assertEquals (score, app.scrabbleScore("adbfkjq"));
+  }
 }
